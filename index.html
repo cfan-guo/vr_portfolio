@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>hi, i'm fan. welcome to my crib. use the arrow keys to move.</title>
+  <meta name="description" content="Fan's XR workspace" />
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-room-component/dist/aframe-room-component.min.js"></script>
+</head>
+
+<body>
+
+  <a-scene loading-screen="dotsColor: #e9e9e9; backgroundColor: #039372">
+    <a-assets>
+      <img id="capstone-award" src="assets/img/capstone-award.jpg" />
+      <img id="capstone-team" src="assets/img/capstone-team.jpg" />
+      <img id="don" src="assets/img/don.jpg" />
+      <img id="dragonboat" src="assets/img/dragonboat.jpg" />
+      <img id="diploma" src="assets/img/diploma.png" />
+      <img id="parade" src="assets/img/parade.jpg" />
+      <img id="volleyball-connected" src="assets/img/volleyball-connected.jpg" />
+      <img id="volleyball-skule" src="assets/img/volleyball-skule.jpg" />
+      <img id="yhack" src="assets/img/yhack.jpg" />
+      <a-asset-item id="couch" src="assets/models/couch.glb"></a-asset-item>
+      <a-asset-item id="books" src="assets/models/books.glb"></a-asset-item>
+      <a-asset-item id="cactus" src="assets/models/cactus.glb"></a-asset-item>
+      <a-asset-item id="chair" src="assets/models/chair.glb"></a-asset-item>
+      <a-asset-item id="couch" src="assets/models/couch.glb"></a-asset-item>
+      <a-asset-item id="desk" src="assets/models/desk.glb"></a-asset-item>
+      <a-asset-item id="doors" src="assets/models/doors.glb"></a-asset-item>
+      <a-asset-item id="floorlamp" src="assets/models/floorlamp.glb"></a-asset-item>
+      <a-asset-item id="kallax" src="assets/models/kallax.glb"></a-asset-item>
+      <a-asset-item id="monsterra" src="assets/models/monsterra.glb"></a-asset-item>
+      <a-asset-item id="oculus" src="assets/models/oculus.glb"></a-asset-item>
+      <a-asset-item id="portal" src="assets/models/portal.glb"></a-asset-item>
+      <a-asset-item id="rug" src="assets/models/rug.glb"></a-asset-item>
+      <a-asset-item id="shelf" src="assets/models/shelf.glb"></a-asset-item>
+      <a-asset-item id="sidetable" src="assets/models/sidetable.glb"></a-asset-item>
+      <a-asset-item id="trophies" src="assets/models/trophies.glb"></a-asset-item>
+      <a-asset-item id="windows" src="assets/models/windows.glb"></a-asset-item>
+    </a-assets>
+    <rw-room position="-2 0 -2" material="color:#e9e9e9">
+      <rw-ceiling material="color: #9b9b9b"></rw-ceiling>
+      <rw-floor material="color: #896f5c"></rw-floor>
+      <rw-wall position="4 0 0"></rw-wall>
+      <rw-wall position="4 0 4"></rw-wall>
+      <rw-wall position="0 0 4"></rw-wall>
+      <rw-wall position="0 0 0"></rw-wall>
+
+      <a-image src="#diploma" width="1.2" height="0.6396" position="2 1.65 0"></a-image>
+      <a-image src="#capstone-award" width="0.6" height="0.4" position="2.95 1.875 0"></a-image>
+      <a-image src="#capstone-team" width="0.6" height="0.4" position="1.05 1.875 0"></a-image>
+      <a-image src="#parade" width="0.6" height="0.4" position="2.95 1.425 0"></a-image>
+      <a-image src="#dragonboat" width=0.6 height="0.4" position="1.05 1.425 0"></a-image>
+      <a-image src="#volleyball-connected" width="0.55" height="0.4" position="3.55 1.875 0"></a-image>
+      <a-image src="#volleyball-skule" width="0.55" height="0.4" position="0.45 1.875 0"></a-image>
+      <a-image src="#yhack" width="0.55" height="0.4" position="3.55 1.425 0"></a-image>
+      <a-image src="#don" width="0.55" height="0.4" position="0.45 1.425 0"></a-image>
+
+      <a-entity position="2 0 2" scale="0.02 0.02 0.02">
+        <a-gltf-model src="#books"></a-gltf-model>
+        <a-gltf-model src="#cactus"></a-gltf-model>
+        <a-gltf-model src="#chair"></a-gltf-model>
+        <a-gltf-model src="#couch" position="5 0 0"></a-gltf-model>
+        <a-gltf-model src="#desk"></a-gltf-model>
+        <a-gltf-model src="#doors"></a-gltf-model>
+        <a-gltf-model src="#floorlamp" position="5 0 0"></a-gltf-model>
+        <a-gltf-model src="#kallax"></a-gltf-model>
+        <a-gltf-model src="#monsterra"></a-gltf-model>
+        <a-gltf-model src="#oculus"></a-gltf-model>
+        <a-gltf-model src="#portal"></a-gltf-model>
+        <a-gltf-model src="#rug"></a-gltf-model>
+        <a-gltf-model src="#shelf"></a-gltf-model>
+        <a-gltf-model src="#sidetable" position="5 0 0"></a-gltf-model>
+        <a-gltf-model src="#trophies"></a-gltf-model>
+        <a-gltf-model src="#windows"></a-gltf-model>
+      </a-entity>
+    </rw-room>
+  </a-scene>
+</body>
+
+</html>
